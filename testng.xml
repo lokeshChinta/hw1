@@ -1,0 +1,23 @@
+<suite name ="suite" parallel="tests">
+<listeners>
+<listener class-name="com.GenericLibrary.Listener"/>
+</listeners>
+<test name ="test1" >
+<classes>
+<class name="com.tests.FirstTest"/>
+</classes>
+</test>
+
+<test name ="test2" >
+<classes>
+<class name="com.tests.SecondTest"/>
+</classes>
+</test>
+
+<test name ="test3" >
+<classes>
+<class name="com.tests.FlightTest"/>
+</classes>
+</test>
+
+</suite>
