@@ -10,3 +10,5 @@ Added Framework Components like
 
 
 This Project needs to modified to get the URLS from Properties File
+
+Once the Execution is done , Screenshots and reports are generated in their respective folders 
