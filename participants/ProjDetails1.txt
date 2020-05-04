@@ -1,0 +1,9 @@
+This project is used to run the Automation Scripts using WebDriver
+
+Added Framework Components like 
+
+- Object Repository
+- Generic Library
+-Test Scripts to Run the Test
+- Runner File
+- Listener class to provide the Reports 
