@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.GenericLibrary.Listener"/>
+  </listeners>
+  <test thread-count="5" name="test3(failed)" parallel="tests">
+    <classes>
+      <class name="com.tests.FlightTest">
+        <methods>
+          <include name="fillTheDetailsInTheApp"/>
+          <include name="tearDown"/>
+          <include name="registerToApp"/>
+          <include name="configure"/>
+          <include name="verifySignOff"/>
+        </methods>
+      </class> <!-- com.tests.FlightTest -->
+    </classes>
+  </test> <!-- test3(failed) -->
+</suite> <!-- Failed suite [suite] -->

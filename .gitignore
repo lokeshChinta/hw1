@@ -6,3 +6,5 @@ SAMR
 *.swp
 # Serious: Deal with confused Mac users
 .DS_Store
+# Illustration: Ignore files called .apy
+.apy
