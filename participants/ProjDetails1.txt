@@ -7,3 +7,6 @@ Added Framework Components like
 -Test Scripts to Run the Test
 - Runner File
 - Listener class to provide the Reports 
+
+
+This Project needs to modified to get the URLS from Properties File
