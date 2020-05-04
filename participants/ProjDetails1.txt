@@ -10,3 +10,5 @@ Added Framework Components like
 
 
 This Project needs to modified to get the URLS from Properties File
+
+The Reports are generated in Reports Folder 
