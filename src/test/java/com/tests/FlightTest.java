@@ -31,26 +31,22 @@ public class FlightTest extends BaseWebDriver  {
 	
 	@Test(priority=0)
 	public void registerToApp() throws IOException {
+
 		
-//		FileReader reader = new FileReader(System.getProperty("user.dir")+"\\Env.properties");
-//	    Properties prop =new Properties();
-//	    prop.load(reader);
-	  
-		//Env_URL=
 		//	Google_URL=http://google.com
 		           chromeDriver=driver.get();     
 		 
 		         RegisterPage registerPageObj=new RegisterPage(chromeDriver);
 		    	HomePage homePageObj=new HomePage(chromeDriver);
-		        AuthenticationPage authenPageObj=new AuthenticationPage(chromeDriver);
+		      //  AuthenticationPage authenPageObj=new AuthenticationPage(chromeDriver);
 		
-		String url="http://newtours.demoaut.com/";
+		//String url="http://newtours.demoaut.com/";
 		
-		driver.get().get(url);
-		ReUsableMethods.maximizeBrowser(chromeDriver);
+		driver.get().get(prop.get().getProperty("url"));
+		//ReUsableMethods.maximizeBrowser(chromeDriver);
         
 		
-		authenPageObj.doAuthentication();
+		//authenPageObj.doAuthentication();
 		
 		
 		

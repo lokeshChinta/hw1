@@ -4,7 +4,7 @@
 </listeners>
 <test name ="test1" >
 <classes>
-<class name="com.tests.FirstTest"/>
+<class name="com.tests.FlightTest"/>
 </classes>
 </test>
 
