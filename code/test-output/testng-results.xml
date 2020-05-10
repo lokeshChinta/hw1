@@ -1,65 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="suite" duration-ms="76112" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:16:00 IST">
+  <suite name="suite" duration-ms="307770" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:33:01 IST">
     <groups>
     </groups>
-    <test name="test1" duration-ms="26546" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:15:11 IST">
+    <test name="verify the Google page Launch" duration-ms="43566" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:28:37 IST">
       <class name="com.tests.FirstTest">
-        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.FirstTest@32d2fa64]" name="configure" is-config="true" duration-ms="4789" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:14:49 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.FirstTest@13eb8acf]" name="configure" is-config="true" duration-ms="13297" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:28:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="googleTest()[pri:0, instance:com.tests.FirstTest@32d2fa64]" name="googleTest" duration-ms="20056" started-at="2020-05-04T13:14:49 IST" finished-at="2020-05-04T13:15:09 IST">
+        <test-method status="PASS" signature="googleTest()[pri:0, instance:com.tests.FirstTest@13eb8acf]" name="googleTest" duration-ms="9254" started-at="2020-05-08T17:28:07 IST" finished-at="2020-05-08T17:28:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.FirstTest@32d2fa64]" name="tearDown" is-config="true" duration-ms="1331" started-at="2020-05-04T13:15:09 IST" finished-at="2020-05-04T13:15:11 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.FirstTest@13eb8acf]" name="tearDown" is-config="true" duration-ms="3256" started-at="2020-05-08T17:28:34 IST" finished-at="2020-05-08T17:28:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.FirstTest -->
-    </test> <!-- test1 -->
-    <test name="test2" duration-ms="46001" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:15:30 IST">
+    </test> <!-- verify the Google page Launch -->
+    <test name="verify the Yahoo page Launch" duration-ms="49763" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:28:43 IST">
       <class name="com.tests.SecondTest">
-        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.SecondTest@1e7c7811]" name="configure" is-config="true" duration-ms="6047" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:14:50 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.SecondTest@8e24743]" name="configure" is-config="true" duration-ms="13297" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:28:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="yahooTest()[pri:0, instance:com.tests.SecondTest@1e7c7811]" name="yahooTest" duration-ms="37949" started-at="2020-05-04T13:14:50 IST" finished-at="2020-05-04T13:15:28 IST">
+        <test-method status="PASS" signature="yahooTest()[pri:0, instance:com.tests.SecondTest@8e24743]" name="yahooTest" duration-ms="32396" started-at="2020-05-08T17:28:07 IST" finished-at="2020-05-08T17:28:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- yahooTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.SecondTest@1e7c7811]" name="tearDown" is-config="true" duration-ms="1501" started-at="2020-05-04T13:15:29 IST" finished-at="2020-05-04T13:15:30 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.SecondTest@8e24743]" name="tearDown" is-config="true" duration-ms="1945" started-at="2020-05-08T17:28:41 IST" finished-at="2020-05-08T17:28:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.SecondTest -->
-    </test> <!-- test2 -->
-    <test name="test3" duration-ms="76112" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:16:00 IST">
+    </test> <!-- verify the Yahoo page Launch -->
+    <test name="Check the Details for 3 Passengers" duration-ms="307733" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:33:01 IST">
       <class name="com.tests.FlightTest">
-        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.FlightTest@4d3167f4]" name="configure" is-config="true" duration-ms="6684" started-at="2020-05-04T13:14:44 IST" finished-at="2020-05-04T13:14:51 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.FlightTest@289d1c02]" name="configure" is-config="true" duration-ms="13297" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:28:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="registerToApp()[pri:0, instance:com.tests.FlightTest@4d3167f4]" name="registerToApp" duration-ms="51139" started-at="2020-05-04T13:14:51 IST" finished-at="2020-05-04T13:15:42 IST">
+        <test-method status="PASS" signature="registerToApp()[pri:0, instance:com.tests.FlightTest@289d1c02]" name="registerToApp" duration-ms="224901" started-at="2020-05-08T17:28:07 IST" finished-at="2020-05-08T17:31:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerToApp -->
-        <test-method status="PASS" signature="fillTheDetailsInTheApp()[pri:1, instance:com.tests.FlightTest@4d3167f4]" name="fillTheDetailsInTheApp" duration-ms="14009" started-at="2020-05-04T13:15:42 IST" finished-at="2020-05-04T13:15:56 IST">
+        <test-method status="PASS" signature="fillTheDetailsInTheApp(java.lang.String)[pri:1, instance:com.tests.FlightTest@289d1c02]" name="fillTheDetailsInTheApp" duration-ms="55108" started-at="2020-05-08T17:31:52 IST" finished-at="2020-05-08T17:32:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillTheDetailsInTheApp -->
-        <test-method status="PASS" signature="verifySignOff()[pri:2, instance:com.tests.FlightTest@4d3167f4]" name="verifySignOff" duration-ms="2161" started-at="2020-05-04T13:15:57 IST" finished-at="2020-05-04T13:15:59 IST">
+        <test-method status="PASS" signature="verifySignOff()[pri:2, instance:com.tests.FlightTest@289d1c02]" name="verifySignOff" duration-ms="13910" started-at="2020-05-08T17:32:47 IST" finished-at="2020-05-08T17:33:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignOff -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.FlightTest@4d3167f4]" name="tearDown" is-config="true" duration-ms="1221" started-at="2020-05-04T13:15:59 IST" finished-at="2020-05-04T13:16:00 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.FlightTest@289d1c02]" name="tearDown" is-config="true" duration-ms="62" started-at="2020-05-08T17:33:01 IST" finished-at="2020-05-08T17:33:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tests.FlightTest -->
-    </test> <!-- test3 -->
+    </test> <!-- Check the Details for 3 Passengers -->
+    <test name="Check the Details for 2 Passengers" duration-ms="307770" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:33:01 IST">
+      <class name="com.tests.FlightTest">
+        <test-method status="PASS" signature="configure()[pri:0, instance:com.tests.FlightTest@1a3869f4]" name="configure" is-config="true" duration-ms="13297" started-at="2020-05-08T17:27:54 IST" finished-at="2020-05-08T17:28:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configure -->
+        <test-method status="PASS" signature="registerToApp()[pri:0, instance:com.tests.FlightTest@1a3869f4]" name="registerToApp" duration-ms="224468" started-at="2020-05-08T17:28:07 IST" finished-at="2020-05-08T17:31:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerToApp -->
+        <test-method status="PASS" signature="fillTheDetailsInTheApp(java.lang.String)[pri:1, instance:com.tests.FlightTest@1a3869f4]" name="fillTheDetailsInTheApp" duration-ms="56570" started-at="2020-05-08T17:31:52 IST" finished-at="2020-05-08T17:32:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillTheDetailsInTheApp -->
+        <test-method status="PASS" signature="verifySignOff()[pri:2, instance:com.tests.FlightTest@1a3869f4]" name="verifySignOff" duration-ms="12926" started-at="2020-05-08T17:32:48 IST" finished-at="2020-05-08T17:33:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOff -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.FlightTest@1a3869f4]" name="tearDown" is-config="true" duration-ms="59" started-at="2020-05-08T17:33:01 IST" finished-at="2020-05-08T17:33:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.FlightTest -->
+    </test> <!-- Check the Details for 2 Passengers -->
   </suite> <!-- suite -->
 </testng-results>

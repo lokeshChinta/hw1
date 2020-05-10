@@ -21,10 +21,10 @@ public class FirstTest extends BaseWebDriver {
 		chromeDriver.get(url);
 		Listener.logger.get().pass("Launched the "+ url +" Successfully");
 		
-		ReUsableMethods.maximizeBrowser(chromeDriver);
-		AuthenticationPage authenPageObj=new AuthenticationPage(chromeDriver);
+	//	ReUsableMethods.maximizeBrowser(chromeDriver);
+	//	AuthenticationPage authenPageObj=new AuthenticationPage(chromeDriver);
 		
-		authenPageObj.doAuthentication();
+		//authenPageObj.doAuthentication();
 		
 		
 		Listener.logger.get().pass("Test is passed Successfully");

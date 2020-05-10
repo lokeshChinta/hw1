@@ -4,17 +4,16 @@
   <listeners>
     <listener class-name="com.GenericLibrary.Listener"/>
   </listeners>
-  <test thread-count="5" name="test3(failed)" parallel="tests">
+  <test thread-count="5" name="test4(failed)" parallel="tests">
+    <parameter name="noOfPassengers" value="4"/>
     <classes>
       <class name="com.tests.FlightTest">
         <methods>
-          <include name="fillTheDetailsInTheApp"/>
+          <include name="fillTheDetailsInTheApp" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="registerToApp"/>
           <include name="configure"/>
-          <include name="verifySignOff"/>
         </methods>
       </class> <!-- com.tests.FlightTest -->
     </classes>
-  </test> <!-- test3(failed) -->
+  </test> <!-- test4(failed) -->
 </suite> <!-- Failed suite [suite] -->

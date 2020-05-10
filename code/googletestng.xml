@@ -1,0 +1,15 @@
+<suite name ="suite" parallel="tests">
+<listeners>
+<listener class-name="com.GenericLibrary.Listener"/>
+</listeners>
+
+
+<test name ="verify the Google page Launch" >
+<classes>
+<class name="com.tests.FirstTest"/>
+</classes>
+</test>
+
+
+
+</suite>

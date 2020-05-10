@@ -1,11 +1,14 @@
 package com.objectRepo;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.GenericLibrary.Listener;
 import com.GenericLibrary.ReUsableMethods;
 
 public class RegisterPage {
@@ -44,7 +47,7 @@ public class RegisterPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void register() {
+	public void register() throws IOException {
 		
 		ReUsableMethods.waitForElementToAppearInUI(driver, 10, by );
 		
@@ -54,6 +57,11 @@ public class RegisterPage {
 		this.emailEdtBox.sendKeys("lokeech@gmail.com");
 		this.passwordEdtBox.sendKeys("password");
 		this.confirmPasswordEdtBox.sendKeys("password");
+		
+		String name=ReUsableMethods.takeScreenshot(driver, "Login Page");
+		
+		// Listener.logger.get().addScreenCaptureFromPath(name);
+		
 		this.registerBtn.click();
 		
 		
