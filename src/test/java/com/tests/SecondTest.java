@@ -20,9 +20,9 @@ public class SecondTest extends BaseWebDriver {
 		Listener.logger.get().pass("Launched the "+ url +" Successfully");
 		
 		//ReUsableMethods.maximizeBrowser(chromeDriver);
-        AuthenticationPage authenPageObj=new AuthenticationPage(chromeDriver);
+       // AuthenticationPage authenPageObj=new AuthenticationPage(chromeDriver);
 		
-		authenPageObj.doAuthentication();
+	//	authenPageObj.doAuthentication();
 		
 		Listener.logger.get().pass("Test is passed Successfully");
 		

@@ -1,20 +1,30 @@
-<suite name ="suite" parallel="tests">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="suite" parallel="tests" thread-count="5" verbose="10" configfailurepolicy="skip">
 <listeners>
 <listener class-name="com.GenericLibrary.Listener"/>
 </listeners>
-<test name ="test1" >
+<test name ="Check the Details for 2 Passengers" >
+<parameter name="noOfPassengers" value="2"/>
 <classes>
 <class name="com.tests.FlightTest"/>
 </classes>
 </test>
 
-<test name ="test2" >
+<test name ="verify the Yahoo page Launch" >
 <classes>
 <class name="com.tests.SecondTest"/>
 </classes>
 </test>
 
-<test name ="test3" >
+<test name ="verify the Google page Launch" >
+<classes>
+<class name="com.tests.FirstTest"/>
+</classes>
+</test>
+
+<test name ="Check the Details for 3 Passengers" >
+<parameter name="noOfPassengers" value="3"/>
 <classes>
 <class name="com.tests.FlightTest"/>
 </classes>

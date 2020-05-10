@@ -22,18 +22,34 @@ public class BaseWebDriver {
 	    
 		@BeforeTest
 		public void configure() throws IOException {
+			FileReader fr;
+			fr = new FileReader(System.getProperty("user.dir")+"//proj.properties");
 			
-			FileReader fr = new FileReader(System.getProperty("user.dir")+"\\proj.properties");
+//			if(System.getProperty("ENV")!=null &&
+//				System.getProperty("ENV").equalsIgnoreCase("win"))
+//			{
+//				fr = new FileReader(System.getProperty("user.dir")+"\\proj.properties");
+//			}
+//			else
+//			{
+//				fr = new FileReader(System.getProperty("user.dir")+"//proj.properties");
+//			}
+			
+			//FileReader fr = new FileReader(System.getProperty("user.dir")+"//proj.properties");
+			
 			Properties propObj=new Properties();
 			prop.set(propObj);
 			prop.get().load(fr);
 		      	
 			String host="localhost";
-			DesiredCapabilities caps= DesiredCapabilities.chrome();
+			DesiredCapabilities caps;
 			
 			if(System.getProperty("BROWSER")!=null &&
 					System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
 				caps=DesiredCapabilities.firefox();
+			}
+			else {
+				caps=DesiredCapabilities.chrome();
 			}
 			
 			if(System.getProperty("HUB_HOST")!=null)

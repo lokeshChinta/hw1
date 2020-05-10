@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-suite">
-              <span class="suite-name border-failed">suite</span>
+              <span class="suite-name border-passed">suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-suite" class="hide-methods failed suite-suite"> (hide)</a> <!-- hide-methods failed suite-suite -->
-                      <a href="#" panel-name="suite-suite" class="show-methods failed suite-suite"> (show)</a> <!-- show-methods failed suite-suite -->
-                    </span>
-                    <div class="method-list-content failed suite-suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.SecondTest" hash-for-method="yahooTest">yahooTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,12 +104,17 @@
                     <div class="method-list-content passed suite-suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.FlightTest" hash-for-method="fillTheDetailsInTheApp">fillTheDetailsInTheApp</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.FlightTest" hash-for-method="fillTheDetailsInTheApp(3)">fillTheDetailsInTheApp(3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.FlightTest" hash-for-method="fillTheDetailsInTheApp">fillTheDetailsInTheApp</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.FlightTest" hash-for-method="fillTheDetailsInTheApp(2)">fillTheDetailsInTheApp(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.FirstTest" hash-for-method="googleTest">googleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,6 +135,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.FlightTest" hash-for-method="verifySignOff">verifySignOff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite" title="com.tests.SecondTest" hash-for-method="yahooTest">yahooTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-suite -->
@@ -158,9 +154,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-suite" class="panel suite">
-          <div class="suite-suite-class-failed">
+          <div class="suite-suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.tests.SecondTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -169,44 +165,25 @@
                   <a name="yahooTest">
                   </a> <!-- yahooTest -->
                   <span class="method-name">yahooTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input.form-input-field&quot;}
-  (Session info: chrome=70.0.3538.77)
-  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.19.76-linuxkit x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LOKESHC2-BLD&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600233 (523efee95e3d68..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:34619}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true, webdriver.remote.sessionid: b354928d33ca4605e2ee44bb802...}
-Session ID: b354928d33ca4605e2ee44bb802d3580
-*** Element info: {Using=css selector, value=input.form-input-field}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at com.objectRepo.AuthenticationPage.doAuthentication(AuthenticationPage.java:37)
-	at com.tests.SecondTest.yahooTest(SecondTest.java:25)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-suite-class-failed -->
+          </div> <!-- suite-suite-class-passed -->
+          <div class="suite-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tests.FirstTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTest">
+                  </a> <!-- googleTest -->
+                  <span class="method-name">googleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite-class-passed -->
           <div class="suite-suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -215,16 +192,18 @@ Session ID: b354928d33ca4605e2ee44bb802d3580
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fillTheDetailsInTheApp">
-                  </a> <!-- fillTheDetailsInTheApp -->
+                  <a name="fillTheDetailsInTheApp(3)">
+                  </a> <!-- fillTheDetailsInTheApp(3) -->
                   <span class="method-name">fillTheDetailsInTheApp</span>
+                  <span class="parameters">(3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="fillTheDetailsInTheApp">
-                  </a> <!-- fillTheDetailsInTheApp -->
+                  <a name="fillTheDetailsInTheApp(2)">
+                  </a> <!-- fillTheDetailsInTheApp(2) -->
                   <span class="method-name">fillTheDetailsInTheApp</span>
+                  <span class="parameters">(2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -266,25 +245,32 @@ Session ID: b354928d33ca4605e2ee44bb802d3580
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.GenericLibrary.Listener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;test1&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;Check the Details for 2 Passengers&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;noOfPassengers&quot; value=&quot;2&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.FlightTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test1 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;test2&quot; parallel=&quot;tests&quot;&gt;
+  &lt;/test&gt; &lt;!-- Check the Details for 2 Passengers --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;verify the Yahoo page Launch&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.SecondTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test2 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;test3&quot; parallel=&quot;tests&quot;&gt;
+  &lt;/test&gt; &lt;!-- verify the Yahoo page Launch --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;verify the Google page Launch&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tests.FirstTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- verify the Google page Launch --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;Check the Details for 3 Passengers&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;noOfPassengers&quot; value=&quot;3&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tests.FlightTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test3 --&gt;
+  &lt;/test&gt; &lt;!-- Check the Details for 3 Passengers --&gt;
 &lt;/suite&gt; &lt;!-- suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -296,13 +282,16 @@ Session ID: b354928d33ca4605e2ee44bb802d3580
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">test1 (1 class)</span>
+                <span class="test-name">Check the Details for 2 Passengers (1 class)</span>
               </li>
               <li>
-                <span class="test-name">test2 (1 class)</span>
+                <span class="test-name">verify the Yahoo page Launch (1 class)</span>
               </li>
               <li>
-                <span class="test-name">test3 (1 class)</span>
+                <span class="test-name">verify the Google page Launch (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Check the Details for 3 Passengers (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,40 +317,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registerToApp')
 data.setCell(0, 2, 'com.tests.FlightTest')
-data.setCell(0, 3, 56443);
+data.setCell(0, 3, 224901);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'registerToApp')
 data.setCell(1, 2, 'com.tests.FlightTest')
-data.setCell(1, 3, 39321);
+data.setCell(1, 3, 224468);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'yahooTest')
-data.setCell(2, 2, 'com.tests.SecondTest')
-data.setCell(2, 3, 36086);
+data.setCell(2, 1, 'fillTheDetailsInTheApp')
+data.setCell(2, 2, 'com.tests.FlightTest')
+data.setCell(2, 3, 56570);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'fillTheDetailsInTheApp')
 data.setCell(3, 2, 'com.tests.FlightTest')
-data.setCell(3, 3, 22831);
+data.setCell(3, 3, 55108);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'fillTheDetailsInTheApp')
-data.setCell(4, 2, 'com.tests.FlightTest')
-data.setCell(4, 3, 17056);
+data.setCell(4, 1, 'yahooTest')
+data.setCell(4, 2, 'com.tests.SecondTest')
+data.setCell(4, 3, 32396);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifySignOff')
 data.setCell(5, 2, 'com.tests.FlightTest')
-data.setCell(5, 3, 6760);
+data.setCell(5, 3, 13910);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifySignOff')
 data.setCell(6, 2, 'com.tests.FlightTest')
-data.setCell(6, 3, 1842);
+data.setCell(6, 3, 12926);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'googleTest')
+data.setCell(7, 2, 'com.tests.FirstTest')
+data.setCell(7, 3, 9254);
 window.suiteTableData['suite']= { tableData: data, tableDiv: 'times-div-suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-suite">
               </div> <!-- times-div-suite -->
             </div> <!-- times-div -->
@@ -394,6 +387,13 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">com.tests.FirstTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">configure</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.tests.FlightTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">configure</span>
@@ -405,57 +405,66 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">registerToApp</span>
-                <span class="method-start">8424 ms</span>
+                <span class="method-start">13318 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.SecondTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">yahooTest</span>
-                <span class="method-start">8424 ms</span>
+                <span class="method-start">13318 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.FlightTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">registerToApp</span>
-                <span class="method-start">8424 ms</span>
+                <span class="method-start">13318 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tests.FirstTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">googleTest</span>
+                <span class="method-start">13318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40304 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.SecondTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44515 ms</span>
+                <span class="method-start">47811 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tests.FlightTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">fillTheDetailsInTheApp</span>
-                <span class="method-start">47884 ms</span>
+                <span class="method-name">fillTheDetailsInTheApp(2)</span>
+                <span class="method-start">237925 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">fillTheDetailsInTheApp</span>
-                <span class="method-start">64995 ms</span>
+                <span class="method-name">fillTheDetailsInTheApp(3)</span>
+                <span class="method-start">238356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySignOff</span>
-                <span class="method-start">70859 ms</span>
+                <span class="method-start">293614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySignOff</span>
+                <span class="method-start">294630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72835 ms</span>
+                <span class="method-start">307665 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="test-method">
-                <span class="method-name">verifySignOff</span>
-                <span class="method-start">82193 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">89077 ms</span>
+                <span class="method-start">307704 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
