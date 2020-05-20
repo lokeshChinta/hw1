@@ -14,7 +14,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Listener implements ITestListener {
 	
-	private ExtentHtmlReporter reporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\Reports.html");
+	private ExtentHtmlReporter reporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"//Reports//Reports.html");
 	private ExtentReports extentReports = new ExtentReports();
 	//public ExtentTest logger;
 	

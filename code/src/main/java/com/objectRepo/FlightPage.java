@@ -48,6 +48,8 @@ public class FlightPage {
 	   String ExpectedVal="$1169 USD";
 	   boolean status=false;
 	   try {
+		   
+		   if(index >0 && index <4) {
 	   ReUsableMethods.selectByIndexusingSelectClass(this.passengersSelectDropDown, index);
 	   ReUsableMethods.takeScreenshot(driver, "FirstPage");
 	   
@@ -65,10 +67,18 @@ public class FlightPage {
 	   
 	   System.out.println("Result is "+resultVal.get(1).getText());
 	   
+	   
+	   
 	  // Assert.assertEquals(resultVal.get(1).getText().trim(),ExpectedVal);
 	   status=true;
 	   
 	   }
+		   else
+		   {
+			   status=false;
+		   }
+	   }
+	   
 	   catch(Exception e) {
 		   System.out.println(e.getMessage());
 	   }

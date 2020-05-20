@@ -60,7 +60,7 @@ public class ReUsableMethods {
 	public static String takeScreenshot(WebDriver driver,String name) {
 		String screenshotFileName=null;
 		try {
-			  screenshotFileName= System.getProperty("user.dir")+"\\Screenshots\\"+name+".jpg";
+			  screenshotFileName= System.getProperty("user.dir")+"//Screenshots//"+name+".jpg";
 			File newFile =new File(screenshotFileName);
 			
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

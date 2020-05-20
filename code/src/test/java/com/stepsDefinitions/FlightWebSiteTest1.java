@@ -53,7 +53,7 @@ public class FlightWebSiteTest1 {
 		driver.get(url);
 		// ReUsableMethods.maximizeBrowser(chromeDriver);
 
-		// authenPageObj.doAuthentication();
+		 authenPageObj.doAuthentication();
 
 		homePageObj.clickRegisterButton();
 

@@ -1,22 +1,16 @@
 package com.tests;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Properties;
 
+import java.io.IOException;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.GenericLibrary.BaseWebDriver;
 import com.GenericLibrary.Listener;
 import com.GenericLibrary.ReUsableMethods;
-import com.objectRepo.AuthenticationPage;
 import com.objectRepo.FlightPage;
 import com.objectRepo.HomePage;
-import com.objectRepo.Login;
 import com.objectRepo.RegisterPage;
 
 public class FlightTest extends BaseWebDriver {
@@ -99,60 +93,5 @@ public class FlightTest extends BaseWebDriver {
 
 	}
 
-//	@Test
-//	public void verifyTheAmountDisplayedInUI() throws IOException {
-//		
-//		FileReader reader = new FileReader(System.getProperty("user.dir")+"\\Env.properties");
-//	    Properties prop =new Properties();
-//	    prop.load(reader);
-//	  
-//		      BaseClass.driver.get(prop.getProperty("Env_URL"));
-//		
-//		     registerPageObj=new RegisterPage(BaseClass.driver);
-//			 homePageObj=new HomePage(BaseClass.driver);
-//			 flightPageObj= new FlightPage(BaseClass.driver);
-//			 
-//			 loginObj=new Login(BaseClass.driver);
-//			 
-//			 ReUsableMethods.logger=Listener.extent.createTest(" verify The Amount Displayed In UI "); 
-//			 
-//		     homePageObj.clickRegisterButton();
-//		     
-//		     ReUsableMethods.logger.pass("Register Button is clicked successfully");
-//		     
-//		     String name=ReUsableMethods.takeScreenshot(BaseClass.driver, "RegisterPage");
-//		     
-//		     ReUsableMethods.logger.addScreenCaptureFromPath(name, "REGISTER PAGE");
-//		     
-//		     
-//		     registerPageObj.register();
-//		     
-//		     ReUsableMethods.logger.pass("Register Button is clicked successfully");
-//			 
-//			 // loginObj.loginToApp();
-//			 
-//			 ReUsableMethods.logger.pass("Logging into APP Successfully");
-//		     
-//		     homePageObj.clickFlightButton();
-//		     
-//		     ReUsableMethods.logger.pass("Flight Button is clicked successfully");
-//		     
-//		     ReUsableMethods.waitForPageToLoad(BaseClass.driver, 10);
-//		     
-//		     flightPageObj.fillDetailsAndClickContinue();
-//		     
-//		     ReUsableMethods.logger.pass("Details entered by the user and clicked on Continue  Button");
-//		     
-//		     homePageObj.clickSignOffButton();
-//		     
-//		     ReUsableMethods.logger.pass("sign Off Button is clicked successfully");
-//		     
-//		     ReUsableMethods.takeScreenshot(BaseClass.driver, "SignOffPage");
-//		     
-//		     
-//		     
-//		     
-//		
-//	}
 
 }
